@@ -3,8 +3,8 @@
 enrolled at Villains Academy.* :school:
 
 ## How to use ##
-```
+
 *ruby directory.rb*
-```
+
 
 
