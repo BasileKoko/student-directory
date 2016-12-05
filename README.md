@@ -1,10 +1,10 @@
 # Student  Directory #
 *The student directory script allows you to manage the list of students
-enrolled at Villains Academy.*
+enrolled at Villains Academy.* :school:
 
 ## How to use ##
 ```
-ruby directory.rb
+*ruby directory.rb*
 ```
 
 
