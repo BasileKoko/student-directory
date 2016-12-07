@@ -58,7 +58,7 @@ def print_student_list
   end
 end
 
-def print_footer(@students)
+def print_footer
   puts "Overall, we have #{@students.count} great students"
 end
 
