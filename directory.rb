@@ -24,7 +24,7 @@ def print_header
 end
 
 def print(students)
-  students.each do |student|
+  students.each  do |student|
     puts "#{student[:name]} (#{student[:cohort]} cohort)"
   end
 end
@@ -32,8 +32,33 @@ end
 def print_footer(names)
   puts "Overall, we have #{names.count} great students"
 end
+
+def interactive_menu
+  students = []
+  loop do
+    #1. print menu and ask the user what to do
+    puts "1. Input the students"
+    puts "2. Show the students"
+    puts "9. Exit" # 9 because we 'll be adding more items
+    selection = gets.chomp
+    # 3. do what the user has asked
+    case selection
+    when "1"
+      students = input_students
+    when "2"
+      print_header
+      print(students)
+      print_footer(students)
+    when "9"
+      exit # this will cause the program to terminate
+    else
+      puts "I don't know what you meant, try again"
+    end
+  end
+end
 #nothing happens until we call the methods
-students = input_students
-print_header
-print(students)
-print_footer(students)
+interactive_menu
+#students = input_students
+#print_header
+#print(students)
+#print_footer(students)
